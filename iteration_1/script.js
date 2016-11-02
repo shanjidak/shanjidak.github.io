@@ -14,6 +14,6 @@ $(document).ready(function(){
 		$(this).css('background-color','white');
 	})
 	$('.element').mouseout(function(){
-		$(this).css('background-color','hsl(" + i * 3.6 + ", 100%, 50%)');
+		$(this).css('background-color','white');
 	})
 })
