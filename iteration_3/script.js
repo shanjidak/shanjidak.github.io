@@ -5,8 +5,8 @@ $(document).ready(function(){
   Code to run sequentially
   ----------------------------------------------- */
  
-  for (i = 0; i < 3000; i++) {
-        $("body").append( "<div class='element' src='transform:rotate(" + i * 1000 + "deg);'></divv>");
+  for (i = 0; i < 100; i++) {
+        $("body").append( "<div class='element' src='transform:rotate(" + i * 100 + "deg);'></divv>");
         console.log("element " + i + " added");
         $("body").append( "<div class='element' style='background-color: hsl(" + i * 10 + ", 100%, 50%);'></div>" );
         console.log("element " + i + " added");
@@ -29,16 +29,16 @@ $(document).ready(function(){
   });
 
 
-
+drawRandomObject();
 
   /* -------------------------------------------
   Custom functions used above are defined below
   ----------------------------------------------- */
   function drawGridObjects(){
     //append new element 1000 times (50*20=1000)
-    for (j = 0; j < 50; j++){
-      for (i = 0; i < 20; i++) { 
-        $("body").append( "<div class='element' style='left:" + i*5 + "vw; top:" + j*50 + "px;'></div>" );
+    for (j = 0; j < 0; j++){
+      for (i = 0; i < 0; i++) { 
+        $("body").append( "<div class='element' style='left:" + i* + "vw; top:" + j*5 + "px;'></div>" );
         // console.log("element " + j + ", " + i + " added");
       }
     }
@@ -60,15 +60,15 @@ rotateGridObjects(second);
     var color = "#000";
     if (ry < 50) {
       //ry is smaller than 50 = above the half
-      color = "white";
+      color = "yellow";
     }
     else if (rx < 25){
       //square is on the left, below the half
-      color = "white";
+      color = "red";
     }
     else if (rx < 75){
       //square is on the left, below the half
-      color = "white";
+      color = "blue";
     }
     else {
       //square is on the right, below the half
