@@ -12,5 +12,5 @@ body {
   float:left;
 }
 .random {
-  background-color: white;
+  background-color: hsl(" + i * 10 + ", 100%, 50%);
 }

@@ -1,19 +1,18 @@
 $(document).ready(function(){ 
 
+
+
   for (i = 0; i < 100; i++) {
-        $("body").append( "<div class='element' src='transform:rotate(" + i * 100 + "deg);'></divv>");
-        console.log("element " + i + " added");
         $("body").append( "<div class='element' style='background-color: hsl(" + i * 10 + ", 100%, 50%);'></div>" );
         console.log("element " + i + " added");
+        drawRandomObject();
+        var rx = Math.floor(Math.random()*100);
+        var ry = Math.floor(Math.random()*100);
+        console.log("ry: " + ry + " ry: " + ry);
+        $("body").append( "<div class='element random' style='left:" + "vw; top:" + "vh;'></div>" );
     }
 
-  drawGridObjects();
-  //drawRandomObject();
-  var rx = Math.floor(Math.random()*100);
-  var ry = Math.floor(Math.random()*100);
-  console.log("rx: " + rx + " ry: " + ry);
-  $("body").append( "<div class='element random' style='left:" + rx + "vw; top:" + ry + "vh;'></div>" );
-  
+    
 
   //mouse interaction
   $('.element').mouseover(function(){
@@ -24,48 +23,22 @@ $(document).ready(function(){
   });
 
 
-drawRandomObject();
-
   /* -------------------------------------------
   Custom functions used above are defined below
   ----------------------------------------------- */
-  function drawGridObjects(){
-    //append new element 1000 times (50*20=1000)
-    for (j = 0; j < 0; j++){
-      for (i = 0; i < 0; i++) { 
-        $("body").append( "<div class='element' style='left:" + i*5 + "vw; top:" + j*5 + "px;'></div>" );
-        // console.log("element " + j + ", " + i + " added");
-      }
-    }
-  }
 
-
-drawGridObjects();
-
-  function drawRandomObject(){
+function drawRandomObject(){
     //store random values between 0 to 100, to rx and ry
     var rx = Math.floor(Math.random()*100);
     var ry = Math.floor(Math.random()*100);
-    var rw = Math.floor(Math.random()*100); //random width
-    var rh = Math.floor(Math.random()*100); //random height
-    var color = "#000";
-    if (ry < 50) {
+    var rw = Math.floor(Math.random()*1500); //random width
+    var rh = Math.floor(Math.random()*2); //random height
+    if (ry < 100) {
       //ry is smaller than 50 = above the half
-      color = "yellow";
+      color = "hsl(" + i * 10 + ", 100%, 50%)";
     }
-    else if (rx < 25){
-      //square is on the left, below the half
-      color = "red";
-    }
-    else if (rx < 75){
-      //square is on the left, below the half
-      color = "blue";
-    }
-    else {
-      //square is on the right, below the half
-      color = "white";
-    }
-    console.log("rx: " + rx + " ry: " + ry);
+
+   console.log("rx: " + ry + " ry: " + ry);
     $("body").append( "<div class='element random' style='left:" + rx + "vw; top:" + ry + "vh; background-color:" + color + "; width:" + rw + "px; height:" + rh + "px;'></div>" );
   }
 });
