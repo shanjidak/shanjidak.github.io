@@ -38,7 +38,7 @@ drawRandomObject();
     //append new element 1000 times (50*20=1000)
     for (j = 0; j < 0; j++){
       for (i = 0; i < 0; i++) { 
-        $("body").append( "<div class='element' style='left:" + i* + "vw; top:" + j*5 + "px;'></div>" );
+        $("body").append( "<div class='element' style='left:" + i*5 + "vw; top:" + j*5 + "px;'></div>" );
         // console.log("element " + j + ", " + i + " added");
       }
     }
