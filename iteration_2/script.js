@@ -8,7 +8,7 @@ $(document).ready(function(){
         drawRandomObject();
         var rx = Math.floor(Math.random()*100);
         var ry = Math.floor(Math.random()*100);
-        console.log("ry: " + ry + " ry: " + ry);
+        console.log("ry: " + rx + " ry: " + ry);
         $("body").append( "<div class='element random' style='left:" + "vw; top:" + "vh;'></div>" );
     }
 
@@ -38,7 +38,7 @@ function drawRandomObject(){
       color = "hsl(" + i * 10 + ", 100%, 50%)";
     }
 
-   console.log("rx: " + ry + " ry: " + ry);
+   console.log("rx: " + rx + " ry: " + ry);
     $("body").append( "<div class='element random' style='left:" + rx + "vw; top:" + ry + "vh; background-color:" + color + "; width:" + rw + "px; height:" + rh + "px;'></div>" );
   }
 });
