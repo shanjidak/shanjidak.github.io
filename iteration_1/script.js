@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
 	//append new element
-	for (i = 0; i < 108; i++) {
-		$("body").append( "<div class='element' src='transform:rotate(" + i * 100 + "deg);'></divv>");
+	for (i = 0; i < 100; i++) {
+		$("body").append( "<div class='element' src='transform:rotate(" + i * 10 + ", 100%, 50%);'></div>");
 		console.log("element " + i + " added");
     	$("body").append( "<div class='element' style='background-color: hsl(" + i * 3.6 + ", 100%, 50%);'></div>" );
       	console.log("element " + i + " added");

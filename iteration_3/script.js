@@ -1,22 +1,15 @@
 $(document).ready(function(){ 
 
-
-  /* -------------------------------------------
-  Code to run sequentially
-  ----------------------------------------------- */
-
- 
   for (i = 0; i < 100; i++) {
         $("body").append( "<div class='element' style='background-color: hsl(" + i * 10 + ", 100%, 50%);'></div>" );
         console.log("element " + i + " added");
-    }
-    
-drawRandomObject();
-
+        drawRandomObject();
         var rx = Math.floor(Math.random()*100);
         var ry = Math.floor(Math.random()*100);
         console.log("ry: " + rx + " ry: " + ry);
         $("body").append( "<div class='element random' style='left:" + "vw; top:" + "vh;'></div>" );
+    }
+    
 
   //mouse interaction
   $('.element').mouseover(function(){
@@ -40,11 +33,14 @@ function drawRandomObject(){
     var rw = Math.floor(Math.random()*1500); //random width
     var rh = Math.floor(Math.random()*2); //random height
     if (ry < 100) {
-      //ry is smaller than 50 = above the half
-      color = "hsl(" + i * 10 + ", 100%, 50%)";
+      color = "white";
     }
   }
+
+console.log("rx: " + rx + " ry: " + ry);
+  $("body").append( "<div class='element random' style='left:" + rx + "vw; top:" + ry + "vh; background-color:" + color + ";'></div>" );
 });
+
 
 function rotateRandomObjects(){
     var now = new Date();
@@ -53,4 +49,6 @@ function rotateRandomObjects(){
     $('.element').css('transform','rotate(' + second*6 + 'deg)');
     //the value of 's' is available to use in this function
   }
+
+
 
