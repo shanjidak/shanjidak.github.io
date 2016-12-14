@@ -1,0 +1,19 @@
+img {
+    display: block;
+    margin-left: 40pt;
+    margin: auto;
+    width: 40%;
+    float: left;
+    padding: 15px;
+    vertical-align: center;
+}
+
+body {
+    margin-top: 50pt;
+}
+
+p {
+    margin: 130pt;
+    font:arial;
+    font-size: 14pt;
+}
