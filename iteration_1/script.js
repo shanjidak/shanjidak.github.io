@@ -6,7 +6,7 @@ $(document).ready(function(){
 		console.log("element " + i + " added");
     	$("body").append( "<div class='element' style='background-color: hsl(" + i * 3.6 + ", 100%, 50%);'></div>" );
       	console.log("element " + i + " added");
-	}
+      }
 
 
 	//mouse interation
