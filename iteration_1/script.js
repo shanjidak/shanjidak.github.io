@@ -15,5 +15,5 @@ $(document).ready(function(){
 	})
 	$('.element').mouseout(function(){
 		$(this).css('background-color','white');
-	})
+	});
 })
