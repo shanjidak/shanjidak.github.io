@@ -32,8 +32,8 @@ function drawRandomObject(){
     var ry = Math.floor(Math.random()*100);
     var rw = Math.floor(Math.random()*1500); //random width
     var rh = Math.floor(Math.random()*2); //random height
-    if (ry < 100) {
-      color = "white";
+    if (ry > 0) {
+      color = "random";
     }
   }
 
