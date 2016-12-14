@@ -32,13 +32,11 @@ function drawRandomObject(){
     var ry = Math.floor(Math.random()*100);
     var rw = Math.floor(Math.random()*1500); //random width
     var rh = Math.floor(Math.random()*2); //random height
-    if (ry > 0) {
-      color = "random";
+    if (ry < 100) {
+      //ry is smaller than 50 = above the half
+      color = "hsl(" + i * 10 + ", 100%, 50%)";
     }
   }
-
-console.log("rx: " + rx + " ry: " + ry);
-  $("body").append( "<div class='element random' style='left:" + rx + "vw; top:" + ry + "vh; background-color:" + color + ";'></div>" );
 });
 
 
