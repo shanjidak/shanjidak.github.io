@@ -1,18 +1,20 @@
 img {
     display: block;
-    margin-left: 40pt;
-    margin: auto;
-    width: 40%;
+    margin: 50px;
     float: left;
     padding: 15px;
-    vertical-align: center;
+    width:350px;
+    height:250px;
 }
 
 body {
-	margin-top: 50pt;
+    font-family: 'Raleway', sans-serif;
+    position:absolute;
+    margin: 150px;
+    width: 1000px;
 }
 
 p {
-    margin: 130pt;
-    font-size: 14pt;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
 }

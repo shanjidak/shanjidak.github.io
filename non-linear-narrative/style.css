@@ -1,12 +1,21 @@
 img {
     display: block;
     margin: 50px;
-    width: 40%;
-    height: 300pt;
     float: left;
     padding: 15px;
+    width:350px;
+    height:250px;
 }
 
 body {
-	margin: 50px;
+	font-family: 'Raleway', sans-serif;
+	position:absolute;
+	margin: 150px;
+	width: 1000px;
 }
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+}
+
