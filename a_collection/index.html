@@ -1,61 +1,139 @@
 <!DOCTYPE>
 <html>
 	<head>
-		<title> Layout with CSS </title>
+		<title> The Meme Collection </title>
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 	</head>
-	<body background="assets/media/index_grid.png">
+	<body>
 		<header>
-			<a><b> MEME COLLECTION </b></a>
+			<a href="index.html"><b> THE MEME COLLECTION </b></a>
 			<nav>
-				<a style="float:right" class="active" href="#">One</a>
-				<a style="float:right" class="active" href="#one">Two</a>
-				<a style="float:right" class="active" href="#two">Three</a>
-				<a style="float:right" class="active" href="#three">Four</a>
-				<a style="float:right" class="active" href="#four">Five</a>
+				<form><input type="search" name="googlesearch"></form>
+				<a class="active" href="04_other.html">Other</a>
+				<a class="active" href="03_animals.html">Animals</a>
+				<a class="active" href="02_cartoons.html">Cartoons</a>
+				<a class="active" href="01_public-figures.html">Public Figures</a>
 			</nav>
 		</header>
 		
 		<main>
-		<!-- Row 2 -->
-			<section id="two">
-				<div class="col col-2of6"></div>
-				<div class="col col-2of6"></div>
-				<div class="col col-2of6"></div>
-			</section>
-
-		<!-- Row 3 -->
-			<section id="three">
-				<div class="col col-3of6"></div>
-				<div class="col col-3of6"></div>
-			</section>
-
-		<!-- Row 6 -->
-			<section id="six">
-				<div class="col col-6of6"><h1 align="center"> There's a meme for everything </h1></div>
-			</section>
-
-		<!-- Row 4 -->
-			<section id="four">
-				<div class="col col-4of6"></div>
-				<div class="col col-2of6"></div>
-			</section>
-
-		<!-- Row 5 -->
-			<section id="five">
-				<div class="col col-5of6"></div>
-				<div class="col col-1of6"></div>
-			</section>
-
+		<!--Homepage -->
 		<!-- Row 1 -->
 			<section id="one">
-				<div class="col col-1of6">2017 Meme Collection</div>
+				<div class="col col-1of6"><a> &copy; &nbsp; 2017 Meme Collection</a></div>
+				<div class="col col-4of6">
+					<div class="wrapper">
+						<h1> There's a meme for everything</h1>
+					</div>
+				</div>
+					<div class="col col-1of6">
+						<a href="one">Privacy Policy</a> &nbsp;&nbsp;
+						<a href="two">Terms of Use</a>
+					</div>
+				</div>
+			</section>
+
+
+<!--Scroll Down (trending) -->
+		<!--Row 7 -->
+			<section id="seven">
+				<h1> Trending Now </h1>
+				<div class="col col-2of6"><img src="assets/media/cartoons/arthur.jpg"></div>
+				<div class="col col-2of6"><img src="assets/media/public-figures/obiden.jpg"></div>
+				<div class="col col-2of6"><img src="assets/media/public-figures/kermit_2.jpg"></div>
+			</section>
+
+<!--Scroll Down (previews) -->
+		<!--Row 8 -->
+			<section id="eight">
+				<div class="heading">
+					<div class="col col-3of6">
+						<h4> Public Figures </h4>
+					</div>
+					<div class="col col-3of6">
+						<a href="01_public-figures.html"> See All </a>
+					</div>
+				</div>
+				<div class="image">
+					<div class="col col-1of6"><img src="assets/media/public-figures/hart.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/public-figures/jackie.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/public-figures/jordan.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/public-figures/obiden.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/public-figures/kermit_2.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/public-figures/leonardo.jpg"></div>
+				</div>
+			</section>
+
+		<!--Row 9 -->
+			<section id="nine">
+				<div class="heading">
+					<div class="col col-3of6">
+						<h4> Cartoons </h4>
+					</div>
+					<div class="col col-3of6">
+						<a href="01_public-figures.html"> See All </a>
+					</div>
+				</div>
+				<div class="image">
+					<div class="col col-1of6"><img src="assets/media/cartoons/arthur.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/cartoons/futurama.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/cartoons/sad-frog.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/cartoons/dinkleberg.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/cartoons/archer.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/cartoons/mr.krabs.jpg"></div>
+				</div>
+			</section>
+
+		<!--Row 10 -->
+			<section id="ten">
+				<div class="heading">
+					<div class="col col-3of6">
+						<h4> Animals </h4>
+					</div>
+					<div class="col col-3of6">
+						<a href="01_public-figures.html"> See All </a>
+					</div>
+				</div>
+				<div class="image">
+					<div class="col col-1of6"><img src="assets/media/animals/dog.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/animals/bear.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/animals/grumpy.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/animals/llama.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/animals/dissapointed.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/animals/sophisticated.jpg"></div>
+				</div>
+			</section>
+
+		<!--Row 11 -->
+			<section id="eleven">
+				<div class="heading">
+					<div class="col col-3of6">
+						<h4> Other </h4>
+					</div>
+					<div class="col col-3of6">
+						<a href="01_public-figures.html"> See All </a>
+					</div>
+				</div>
+				<div class="image">
+					<div class="col col-1of6"><img src="assets/media/other/brian.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/other/nobody.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/other/success.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/other/teacher.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/other/what.jpg"></div>
+					<div class="col col-1of6"><img src="assets/media/other/clever.jpg"></div>
+				</div>
+			</section>
+
+		<!--Row 12 -->
+			<section id="twelve">
 				<div class="col col-1of6"></div>
 				<div class="col col-1of6"></div>
 				<div class="col col-1of6"></div>
 				<div class="col col-1of6"></div>
-				<div class="col col-1of6" align="right"><a href="one">Privacy Policy</a> &nbsp; &nbsp; <a href="two">Terms of Use</a></div>
+				<div class="col col-1of6"></div>
+				<div class="col col-1of6"></div>
 			</section>
 		</main>
 	</body>
