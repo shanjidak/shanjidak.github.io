@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 100px;
+}
+
+body p {
+	font-family: 'Cardo', serif;
+	font-size: 12pt;
+}
+
+body h1{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 40pt;
+	letter-spacing: 1.5px;
+	margin: 0px;
+}
+
+.col {
+	display: inline-block;
+}
+
+.col img, .col iframe {
+	width: 100%;
+	vertical-align: center;
+}
+
+.col-1of6 {
+	width: calc(16.666% - 20px);
+}
+
+.col-2of6 {
+	width: calc(33.333% - 20px);
+	margin: 10px 20px;
+}
+
+.col-3of6 {
+	width: 570px;
+}
+
+.col-4of6 {
+	width: calc(66.666% - 20px);
+}
+
+.col-5of6 {
+	width: calc(83.333% - 20px);
+}
+
+.col-6of6 {
+	width: calc(100% - 20px);
+}
