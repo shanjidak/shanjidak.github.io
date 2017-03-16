@@ -2,37 +2,14 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-color: bisque;
+}
 
 header {
 	position: fixed;
 	left: 20px;
 	bottom: 10px;
-}
-
-.label {
-	display: inline-block;
-}
-
-.label.active {
-	background-color: lightpink;
-}
-
-.label.inactive {
-	background-color: lightblue;
-}
-
-.prompt, .monitor {
-	display: inline-block;
-	background-color: white;
-	padding: 10px;
-	border: 1px solid black;
-}
-
-
-.prompt {
-	animation-name: pulse;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
 }
 
 body {
@@ -42,28 +19,21 @@ body {
 
 .block {
 	display: inline-block;
-	border: 1px solid black;
-	border-radius: 100px;
 	width: calc(10% - 4px);
 	padding-top: 10%;
+	margin: 0;
 }
 
 
-.black {
-	background-color: black;
+.pink {
+	background-color: pink;
 }
 
-.yellow {
-	background-color: yellow;
+.bisque {
+	background-color: lemonchiffon;
 }
 
 /* -- ANIMATION --*/
-
-@keyframes pulse {
-	0% {opacity: 0}
-	50% {opacity: 1}
-	100% {opacity: 0}
-}
 
 
 @media (max-width: 480px) {
@@ -74,24 +44,16 @@ body {
 	.block:hover {
 		background-color: lightpink;
 	}
-	.label.active {
-		display: none;
-	}
 }
 
 @media (min-width: 481px) and (max-width: 991px) {
 	.block {
 		width: calc(10% - 4px);
 		padding-top: calc(10% - 4px);
+		background-color filter: grayscale(100%);
 	}
 	.block:hover {
 		background-color: lightblue;
-	}
-	.label.inactive {
-		display: none;
-	}
-	.prompt {
-		display: none;
 	}
 }
 
@@ -102,9 +64,6 @@ body {
 		padding-top: calc(5% - 4px);
 	}
 	.block:hover {
-		background-color: red;
-	}
-	.label.inactive {
-		display: none;
+		background-color: white;
 	}
 }
