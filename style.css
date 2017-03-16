@@ -232,6 +232,7 @@ h3 {
 	box-shadow: 0px 2px 2px darkgrey;
 	height: 240px;
 	border-radius: 2px;
+    transition: opacity 0.5s;
 }
 
 #image img {
