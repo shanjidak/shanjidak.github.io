@@ -1,6 +1,4 @@
-* {
-	box-sizing: border-box;
-}
+
 
 body {
 	background-color: bisque;
@@ -13,7 +11,7 @@ header {
 }
 
 body {
-	margin: 4px;
+	margin: 0px;
 	margin-right: 0px;
 }
 
@@ -50,7 +48,6 @@ body {
 	.block {
 		width: calc(10% - 4px);
 		padding-top: calc(10% - 4px);
-		background-color filter: grayscale(100%);
 	}
 	.block:hover {
 		background-color: lightblue;
