@@ -5,14 +5,15 @@ body {
 }
 
 header {
-	position: fixed;
 	left: 20px;
 	bottom: 10px;
 }
 
 body {
-	margin: 0px;
+	margin: 100px 0px;
 	margin-right: 0px;
+	min-height: 200px;
+	vertical-align: center;
 }
 
 h1 {
@@ -20,9 +21,13 @@ h1 {
 	text-align: center;
 }
 
-div {
-	margin: 0;
+.monitor {
+	text-align: center;
+	vertical-align: center;
+	align-content: center;
+	width: 100%
 }
+
 
 /* -- ANIMATION --*/
 
