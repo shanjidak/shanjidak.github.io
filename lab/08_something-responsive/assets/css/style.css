@@ -1,7 +1,7 @@
 
 
 body {
-	background-color: bisque;
+	background-color: lightblue;
 }
 
 header {
@@ -15,52 +15,61 @@ body {
 	margin-right: 0px;
 }
 
-.block {
-	display: inline-block;
-	width: calc(10% - 4px);
-	padding-top: 10%;
+h1 {
+	font-family: Arial;
+	text-align: center;
+}
+
+div {
 	margin: 0;
-}
-
-
-.pink {
-	background-color: pink;
-}
-
-.bisque {
-	background-color: lemonchiffon;
 }
 
 /* -- ANIMATION --*/
 
 
 @media (max-width: 480px) {
-	.block {
-		width: calc(20% - 4px);
-		padding-top: calc(20% - 4px);
+	.transform.caterpiller {
+		text-align: center;
+		vertical-align: center;
+		width: 20px;
+		margin: 0;
 	}
-	.block:hover {
-		background-color: lightpink;
+	.transform.cacoon {
+		display: none;
+	}
+	.transform.butterfly {
+		display: none;
 	}
 }
 
 @media (min-width: 481px) and (max-width: 991px) {
-	.block {
-		width: calc(10% - 4px);
-		padding-top: calc(10% - 4px);
+	.transform.caterpiller {
+		display: none;
 	}
-	.block:hover {
-		background-color: lightblue;
+	.transform.cacoon {
+		text-align: center;
+		vertical-align: center;
+		margin: 0;
+	}
+	.transform.butterfly {
+		display: none;
 	}
 }
 
 
 @media (min-width: 992px) {
-	.block {
-		width: calc(5% - 4px)
-		padding-top: calc(5% - 4px);
+	.transform.caterpiller {
+		display: none;
 	}
-	.block:hover {
-		background-color: white;
+	.transform.cacoon {
+		display: none;
+	}
+	.transform.butterfly {
+		text-align: center;
+		vertical-align: center;
+		margin: 0;
 	}
 }
+
+
+
