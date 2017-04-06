@@ -101,7 +101,16 @@ function makeCheckerboard(width, height) {
 // j = row i = column
 
 
+var checkerboard = document.getElementById("checkerboard");
+var html = document.documentElement;
 
+bgButton.addEventListener("click", function(event) {
+	if ( html.style.backgroundColor != "lightpink" ) {
+		html.style.backgroundColor = "lightpink";
+	} else {
+		html.style.backgroundColor = "white";
+	}
+})
 
 
 
