@@ -69,14 +69,15 @@ for (key in letters) {
 document.addEventListener("keydown", function(event) {
    if (event.keyCode >= 65 && event.keyCode <= 90) {
 
-        /*var img = document.getElementById(letters[event.code].id);
-        img.src = letters[event.code].id;
-        container.appendChild(img);*/
-
-       // if (event.shiftKey == true) {
         var img = document.getElementById(letters[event.code].id);
         img.src = letters[event.code].id;
-        container.appendChild(img);
+        //container.appendChild(img);
+
+        if (event.shiftKey == true) {
+        var img = document.getElementById(letters[event.code].id);
+        img.src = letters[event.code].url;
+        //container.removeaChild(img);
+    }
     }
     //else if (event.keyCode)
 });
