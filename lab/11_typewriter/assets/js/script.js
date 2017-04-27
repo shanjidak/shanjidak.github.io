@@ -49,15 +49,9 @@ var letters = {
         id: "W"},
     KeyX: {url: "assets/media/24.png",
         id: "X"},
-    KeyY: {url: "assets/media/25.png",
-        id: "Y"},
-    KeyZ: {url: "assets/media/26.png",
-        id: "Z"}
     //a: {url: "assets/media/27.png",
         //id: "a"}
 };
-
-var bgHue = 0;
 
 for (key in letters) {
     var img = document.createElement('img');
