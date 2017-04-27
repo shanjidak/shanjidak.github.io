@@ -16,6 +16,13 @@ myButton.addEventListener("click", function(event) {
 });
 
 
+
+
+var myButton = document.getElementById()
+
+
+
+
 // Bg Button
 // ---------------------------------
 
