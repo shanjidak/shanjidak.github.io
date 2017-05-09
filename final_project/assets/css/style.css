@@ -203,32 +203,37 @@ a {
 	h1{
 		font-size: 80pt;
 	}
+	h3 {
+		font-size: 20pt;
+	}
 	.container {
 		height: 100vh;
 	}
 	.scroll {
-		width: calc(100vw - 30px);
 		border: 2px solid white;
 		margin-top: 10px;
 	}
 	.posts {
-		height: calc(12% * 20);
-		width: calc(100vw - 30px);
+		width: 100%;
+		height: calc(15% * 8);
 		overflow: auto;
 		overflow-y: scroll;
+		overflow-x: hidden;
 	}
 	.wrapper {
 		border-bottom: 2px solid white;
 		height: calc(98.8%/8);
-		width: 100%;
-		min-width: 100vw;
+		width: calc(100vw - 60px);
+		max-width: 100%;
 		margin: 0;
 		font-size: 12pt;
 		display: inline-block;
+		padding-left: 5%;
 	}
 	.title {
-		display: inline-block;
 		max-width: 100%;
 		color: white;
+		height: 100%;
+		padding-bottom: 5%;
 	}
 
