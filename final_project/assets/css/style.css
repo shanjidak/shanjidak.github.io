@@ -40,6 +40,9 @@ a {
 	color: white;
 }
 
+
+/*---------*/
+
 .home {
 	border: 2px solid white;
 	height: calc(100vh - 20px);
@@ -168,6 +171,10 @@ a {
 	margin-right: 15%;
 }
 
+
+/*---------*/
+
+
 .box {
 	width: calc(100% - 5px);
 	border: 2px solid white;
@@ -204,3 +211,77 @@ a {
 	display: block;
 	position: absolute;
 }
+
+.fb-comments {
+	color: white;
+}
+
+
+/*---------*/
+
+
+@media (max-width: 480px) {
+	h1{
+		font-size: 1000pt;
+	}
+	.container {
+		height: 100vh;
+	}
+	.scroll {
+		width: calc(100% - 5px);
+		height: 100%;
+		overflow: auto;
+		overflow-y: scroll;
+		border: 2px solid white;
+		margin-top: 10px;
+	}
+	.posts {
+		height: calc(12% * 20);
+		width: 100vh;
+		overflow-y: hidden;
+		margin: 0;
+		font-size: 0;
+	}
+	.wrapper {
+		vertical-align: bottom;
+		display: table-cell;
+		border-right: 2px solid white;
+		height: calc(98.8%/8);
+		width: 100vh;
+		margin: 0;
+		font-size: 12pt;
+		padding-bottom: 100px;
+		transition: width 2s;
+		position: relative;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 991px) {
+	.transform.caterpiller {
+		display: none;
+	}
+	.transform.cacoon {
+		text-align: center;
+		vertical-align: center;
+		margin: 0;
+	}
+	.transform.butterfly {
+		display: none;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.transform.caterpiller {
+		display: none;
+	}
+	.transform.cacoon {
+		display: none;
+	}
+	.transform.butterfly {
+		text-align: center;
+		vertical-align: center;
+		margin: 0;
+	}
+}
+
