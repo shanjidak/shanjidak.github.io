@@ -199,15 +199,17 @@ a {
 /*---------*/
 
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 	h1{
-		font-size: 80pt;
+		font-size: 60pt;
+		padding-bottom: 5%;
 	}
 	h3 {
 		font-size: 20pt;
 	}
 	.container {
 		height: 100vh;
+		width: 80vw;
 	}
 	.scroll {
 		border: 2px solid white;
@@ -215,7 +217,7 @@ a {
 	}
 	.posts {
 		width: 100%;
-		height: calc(15% * 8);
+		height: calc(25% * 8);
 		overflow: auto;
 		overflow-y: scroll;
 		overflow-x: hidden;
@@ -228,12 +230,22 @@ a {
 		margin: 0;
 		font-size: 12pt;
 		display: inline-block;
+		position: relative;
 		padding-left: 5%;
 	}
-	.title {
-		max-width: 100%;
-		color: white;
-		height: 100%;
-		padding-bottom: 5%;
+	.home {
+		height: 100vh
+		width: calc(100vw - 20px);
+	}
+	.box {
+		width: calc(100% - 5px);
+		border: 2px solid white;
+		margin-top: 10px;
+	}
+
+	.tab {
+		border: none;
+		width: 100%;
+		margin: 1%;
 	}
 
