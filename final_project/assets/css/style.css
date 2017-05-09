@@ -170,6 +170,17 @@ p {
 	margin-left: 5%;
 	margin-bottom: 3%;
 	margin-top: 3%;
+	display: inline-block;
+}
+
+.right {
+	height: 50%;
+	width: 100vw;
+	vertical-align: top;
+	float: right;
+	position: absolute;
+	margin-right: 5%;
+	display: none;
 }
 
 .writing {
@@ -186,9 +197,10 @@ p {
 }
 
 .image {
-	display: none;
-	width: 50%;
-	padding-left: 45vw;
+	width: 40vw;
+	left: 50%;
+	float: right;
+	display: none
 }
 
 .test:hover + .image {
@@ -196,8 +208,14 @@ p {
 	position: absolute;
 }
 
+.test:active + .image {
+	display: block;
+	position: absolute;
+}
+
 .fb-comments {
 	color: white;
+	background-color: white;
 }
 
 
@@ -257,6 +275,9 @@ p {
 		border: none;
 		width: 100%;
 		margin: 1%;
+	}
+	.right {
+		display: none;
 	}
 }
 
