@@ -12,12 +12,12 @@ nav {
 	margin-right: 50px;
 	color: white;
 	padding: 10px 15px;
-	transition: background-color 0.5s
+	transition: background-color 0.5s;
 }
 
 nav:hover {
 	background-color: white;
-	color: black;
+	color: navy;
 }
 
 h1 {
@@ -40,7 +40,7 @@ a {
 }
 
 
-/*---------*/
+/*-----HOME SCREEN----*/
 
 .home {
 	border: 2px solid white;
@@ -56,7 +56,7 @@ a {
 }
 
 
-/*---------*/
+/*-----HOME MENU----*/
 
 .scroll {
 	width: calc(100% - 5px);
@@ -117,7 +117,7 @@ a {
 
 
 
-/*---------*/
+/*----BLOG POSTS-----*/
 
 
 
@@ -173,7 +173,7 @@ a {
 }
 
 
-/*---------*/
+/*-----IMAGES ----*/
 
 
 .test {
@@ -196,13 +196,12 @@ a {
 }
 
 
-/*---------*/
+/*---- PHONE -----*/
 
 
 @media screen and (max-width: 480px) {
 	h1{
 		font-size: 60pt;
-		padding-bottom: 5%;
 	}
 	h3 {
 		font-size: 20pt;
@@ -210,6 +209,8 @@ a {
 	.container {
 		height: 100vh;
 		width: 80vw;
+		position: relative;
+		padding-bottom: 5%;
 	}
 	.scroll {
 		border: 2px solid white;
@@ -242,10 +243,18 @@ a {
 		border: 2px solid white;
 		margin-top: 10px;
 	}
-
+	.post-1 {
+		font-size: 35pt;
+		padding-bottom: 15%;
+	}
 	.tab {
 		border: none;
 		width: 100%;
 		margin: 1%;
 	}
+
+
+/* ----TABLET ----- */
+
+@media (min-width: 481px) and (max-width: 991px) {
 
