@@ -1,4 +1,4 @@
-document.getElementById("expand-1").addEventListener("click", function() {
+/*document.getElementById("expand-1").addEventListener("click", function() {
     this.classList.toggle("is-active");
 });
 
@@ -33,3 +33,8 @@ document.getElementById("expand-8").addEventListener("click", function() {
 document.getElementById("full-posts").addEventListener("click", function() {
     this.classList.toggle("is-active");
 });
+
+
+document.getElementById("title-1").addEventListener("click", function() {
+    this.classList.toggle("is-active");
+});/*
