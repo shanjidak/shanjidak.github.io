@@ -20,6 +20,11 @@ nav:hover {
 	color: navy;
 }
 
+nav:active {
+	background-color: white;
+	color: navy;
+}
+
 h1 {
 	color: white;
 	font-size: 90pt;
@@ -35,7 +40,7 @@ p {
 	color: white;
 }
 
-a {
+.link {
 	color: white;
 }
 
@@ -196,6 +201,7 @@ a {
 }
 
 
+
 /*---- PHONE -----*/
 
 
@@ -252,9 +258,25 @@ a {
 		width: 100%;
 		margin: 1%;
 	}
+}
 
 
 /* ----TABLET ----- */
 
-@media (min-width: 481px) and (max-width: 991px) {
+@media screen (min-width: 481px) and (max-width: 991px) {
+	h1 {
+		font-size: 30pt;
+	}
+	.posts {
+		width: calc(50 * 8);
+	}
+	.wrapper {
+		width: calc(98.8%/8);
+		font-size: 12pt;
+		padding: 5%;
+	}
+}
+
+@media screen (min-width: 992px) {
+
 
