@@ -38,6 +38,26 @@ nav:visited:hover {
 	color: navy;
 }
 
+nav a:hover {
+	color: navy;
+	text-decoration: none;
+}
+
+nav a:active {
+	color: navy;
+	text-decoration: none;
+}
+
+nav a:link:hover {
+	color: navy;
+	text-decoration: none;
+}
+
+nav a:visited:hover {
+	color: navy;
+	text-decoration: none;
+}
+
 h1 {
 	color: white;
 	font-size: 90pt;
@@ -73,13 +93,13 @@ a:visited {
 }
 
 a:link:hover {
-	color: navy;
-	text-decoration: none;
+	color: white;
+	text-decoration: underline;
 }
 
 a:visited:hover {
-	color: navy;
-	text-decoration: none;
+	color: white;
+	text-decoration: underline;
 }
 
 
@@ -213,6 +233,10 @@ a:visited:hover {
 
 .quote {
 	padding-left: 2vw;
+}
+
+.next {
+	float: right;
 }
 
 /*-----IMAGES ----*/
