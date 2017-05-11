@@ -163,31 +163,10 @@ a:visited:hover {
 	border-right: none;
 }
 
-.vertical {
-	overflow: auto;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	border: 2px solid white;
-	width: calc(35% - 20px);
-	max-width: 600px;
-	min-width: 300px;
-	display: inline-block;
-	height: 70vh;
-	display: none;
-}
-
-/*.title {
-	display: inline-block;
-	/*width: calc(20% - 20px);
-	max-width: 600px;
-	color: white;
-	transition: color 2s;
-} /*
 
 
 
 /*----BLOG POSTS-----*/
-
 
 
 .single {
@@ -215,15 +194,6 @@ a:visited:hover {
 	display: inline-block;
 }
 
-/*.right {
-	height: 50%;
-	width: 100vw;
-	vertical-align: top;
-	float: right;
-	position: absolute;
-	margin-right: 5%;
-	display: none;
-}*/
 
 .writing {
 	width: calc(100% - 40px);
@@ -239,6 +209,8 @@ a:visited:hover {
 	float: right;
 }
 
+
+
 /*-----IMAGES ----*/
 
 
@@ -248,7 +220,7 @@ a:visited:hover {
 }
 
 .test:link:hover {
-	color: white;
+	color: whie;
 	text-decoration: underline;
 }
 
@@ -284,10 +256,27 @@ a:visited:hover {
 	width: 100%;
 }
 
+.share {
+	padding-top: 3vh;
+}
+
+.arrow {
+	width: 5vw;
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: bottom;
+	padding-top: 75vh;
+	display: none;
+}
+
+.arrow img {
+	width: 100%;
+}
 
 
 /* INTERACTIVE */
-
 
 
 .quality {
