@@ -266,6 +266,10 @@ a:visited:hover {
 	width: 100%;
 }
 
+.fb-comments a {
+	color: white;
+}
+
 .share {
 	padding-top: 3vh;
 }
