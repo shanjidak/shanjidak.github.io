@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
 	background-color: navy;
 	background-image: url(background.svg);
@@ -68,7 +72,7 @@ h1 {
 
 h3 {
 	color: white;
-	font-size: 30pt;
+	font-size: 24pt;
 }
 
 h6 {
@@ -80,6 +84,8 @@ h6 {
 
 p {
 	color: white;
+	letter-spacing: 1px;
+	word-spacing: .5pt;
 }
 
 a:link {
@@ -119,50 +125,54 @@ a:visited:hover {
 	padding-bottom: 10vh;
 }
 
+.menu {
+	margin-right: 2vw;
+}
 
 /*-----HOME MENU----*/
 
 .scroll {
-	width: calc(100% - 5px);
+	width: calc(100% - 4px);
 	height: 100%;
 	overflow: auto;
 	overflow-x: scroll;
+	overflow-y: hidden;
 	border: 2px solid white;
 	margin-top: 10px;
-	overflow-y: hidden;
-	background:transparent;
 }
 
-.posts {
-	width: calc(12% * 20);
-	height: 100vh;
+.posts-wrapper {
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
 	overflow-y: hidden;
-	margin: 0;
-	font-size: 0;
-	background:transparent;
+	overflow-x: scroll;
+	white-space: nowrap;;
 }
 
-.wrapper {
+.post {
 	vertical-align: bottom;
-	display: table-cell;
+	display: inline-block;
 	border-right: 2px solid white;
-	width: calc(98.8%/8);
-	min-width: 300px;
-	height: 100vh;
-	margin: 0;
+	width: calc(100% / 3.5);
+	height: 100%;
 	font-size: 12pt;
-	padding-bottom: 100px;
-	padding-left: 50px;
-	padding-right: 30px;
-	transition: width 2s;
-	position: relative;
-	background:transparent;
+	padding: 0vh 2vw 10vh 3vw;
+	box-sizing: border-box;
 }
 
 .wrapper-eight {
 	border-right: none;
 }
 
+.post-inner {
+	height: 100%;
+	width: 100%;
+	white-space: normal;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
 
 
 
@@ -284,6 +294,7 @@ a:visited:hover {
 	padding: 5vw 0;
 	font-color: navy;
 	opacity: 0;
+	text-decoration: none;
 }
 
 .quality:hover {
@@ -309,8 +320,24 @@ a:visited:hover {
 
 .background {
 	width: calc(84vw - 10px);
-	position: fixed;
+	position: absolute;
 	margin: 5vh 10vw;
+}
+
+.research {
+	display: none;
+}
+
+.click {
+	text-decoration: none;
+}
+
+.click:link:hover {
+	text-decoration: none;
+}
+
+.click:hover:visited {
+	text-decoration: none;
 }
 
 .col:hover {
@@ -326,6 +353,7 @@ a:visited:hover {
 	margin-top: 10vh;
 	border: 2px solid white;
 	transition: opacity 0.8s;
+	text-decoration: none;
 }
 
 .cols {
@@ -336,6 +364,7 @@ a:visited:hover {
 	font-size: 0;
 	margin-top: 10vh;
 	transition: opacity 0.8s;
+	text-decoration: none;
 }
 
 .colu {
@@ -400,27 +429,25 @@ a:visited:hover {
 		padding-left: 7vw;
 		margin: 0;
 	}
-	.scroll {
-		border: 2px solid white;
-		margin-top: 10px;
-	}
-	.posts {
-		width: 100%;
-		height: calc(25% * 8);
-		overflow: auto;
+	.posts-wrapper {
+		white-space: normal;
 		overflow-y: scroll;
-		overflow-x: hidden;
 	}
-	.wrapper {
+	.post {
 		border-bottom: 2px solid white;
-		height: calc(98.8%/8);
-		width: calc(100vw - 60px);
-		max-width: 100%;
-		margin: 0;
-		font-size: 12pt;
-		display: inline-block;
-		position: relative;
-		padding-left: 5%;
+		border-right: 0;
+		width: 100%;
+		display: block;
+		height: calc(100% / 2.5);
+		width: 100%;
+		padding: 0vh 2vw 5vh 4vw;
+		min-height: 200px;
+	}
+	.post-inner {
+		padding-top: 0;
+	}
+	.wrapper-eight {
+		border-bottom: none;
 	}
 	.home {
 		height: 100vh
@@ -449,6 +476,7 @@ a:visited:hover {
 }
 
 
+
 /* ----TABLET ----- */
 
 @media only screen and (min-width: 481px) and (max-width: 991px){
@@ -461,7 +489,7 @@ a:visited:hover {
 		padding: 0;
 	}
 	h3 {
-		font-size: 24pt;
+		font-size: 20pt;
 	}
 	p {
 		font-size: 12pt;
@@ -474,19 +502,8 @@ a:visited:hover {
 		padding-left: 5vw;
 		margin: 0;
 	}
-	.posts {
-		width: calc(40% * 8);
-	}
-	.wrapper {
-		width: calc(98.8%/8);
-		font-size: 12pt;
-		padding: 5%;
-		padding-bottom: 10vh;
-		padding-left: 3vw;
-		padding-right: 3vw;
-		position: relative;
-		overflow-y: hidden;
-		min-width: 250px;
+	.post {
+		min-width: 240px;
 	}
 	.tab {
 		min-width: 410px;
@@ -505,13 +522,22 @@ a:visited:hover {
 @media only screen and (min-width: 1442px) {
 	nav {
 		font-size: 16pt;
-		padding: 15px 20px;
+		padding: 12px 18px;
 	}
 	p {
 		font-size: 16pt;
 	}
+	a {
+		font-size: 16pt;
+	}
+	h1 {
+		font-size: 100pt;
+	}
 	h3 {
-		font-size: 40pt;
+		font-size: 30pt;
+	}
+	h6 {
+		font-size: 16pt;
 	}
 	.tab {
 		max-width: 800px;

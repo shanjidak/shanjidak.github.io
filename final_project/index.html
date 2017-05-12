@@ -2,22 +2,24 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<title> The Future of UX/UI </title>
+		<title> The Future of UX </title>
 		<meta name="viewport" content="width=device-width" initial-scale= "1">
+		<script type="text/javascript" src="assets/js/jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
-	<body>
+	<body class="index">
 
 		<div class="background">
 
 			<a class="click" href="research.html">
 				<div class="col col-1of6">
-					<h6 class="quality"> RESEARCH </h6>
+					<h6 class="quality" id="first"> RESEARCH </h6>
 				</div>
 			</a>
 
 				<div class="cols col-1of6"></div>
 
-			<a href="accessibility.html">
+			<a class="click" href="accessibility.html">
 				<div class="col col-1of6">
 					<h6 class="quality"> ACCESSIBILITY </h6>
 				</div>
@@ -25,7 +27,7 @@
 
 				<div class="cols col-1of6"></div>
 
-			<a href="design.html">
+			<a class="click" href="design.html">
 				<div class="col col-1of6">
 					<h6 class="quality"> DESIGN </h6>
 				</div>
@@ -35,7 +37,7 @@
 
 				<div class="cols col-1of6"></div>
 
-			<a href="strategy.html">
+			<a class="click" href="strategy.html">
 				<div class="col col-1of6">
 					<h6 class="quality"> STRATEGY </h6>
 				</div>
@@ -43,14 +45,13 @@
 
 				<div class="cols col-1of6"></div>
 
-			<a href="development.html">
+			<a class="click" href="development.html">
 				<div class="col col-1of6">
 					<h6 class="quality"> DEVELOPMENT </h6>
 				</div>
 			</a>
 
 				<div class="cols col-1of6"></div>
-
 
 		</div>
 
@@ -60,66 +61,85 @@
 			<nav>
 				<a class="about" href="about.html">ABOUT</a>
 			</nav>
+			<nav class="menu">
+				<a href="#menu">POSTS</a>
+			</nav>
 
 			<div class="arrow">
 				<img src="assets/media/arrow.svg">
 			</div>
 
 			<div class="container">
-				<h1> The Future of UX/UI</h1>
+				<h1> The Future of UX</h1>
 			</div>
 
 		</div>
 
-		<div class="scroll">
-			<div class="posts" id="full-posts">
+		<div class="scroll" id="menu">
+			<div class="posts-wrapper" id="full-posts">
 
-				<div class="wrapper wrapper-one" id="expand-1">
-					<h3> Outcome Driven Design </h3>
-					<p> Lorem ipsum dolor sit amet, te diam elit interesset has, te nam luptatum urbanitas maiestatis.</p>
-					<a class="link" href="post_1.html"> READ MORE </a>
+				<div class="post wrapper-one" id="expand-1">
+					<div class="post-inner">
+						<h3> Outcome Driven Design </h3>
+						<p> “Strategic designers influence the what and the why at their company.” Companies that fail...</p>
+						<a class="link" href="post_1.html"> READ MORE </a>
+					</div>
 				</div>
 
-				<div class="wrapper wrapper-two" id="expand-2">
-					<h3> Embracing Complexity </h3>
-					<p> Lorem ipsum dolor sit amet, te diam elit interesset has, te nam luptatum urbanitas maiestatis. </p>
-					<a class="link" href="post_2.html"> READ MORE </a>
+				<div class="post wrapper-two" id="expand-2">
+					<div class="post-inner">
+						<h3> Embracing Complexity </h3>
+						<p> A few years ago, no one would have thought a UX/UI designer would be involved in... </p>
+						<a class="link" href="post_2.html"> READ MORE </a>
+					</div>
 				</div>
 
-				<div class="wrapper wrapper-three" id="expand-3">
-					<h3> Changing Roles </h3>
-					<p> Lorem ipsum dolor sit amet, te diam elit interesset has, te nam luptatum urbanitas maiestatis. </p>
-					<a class="link" href="post_3.html"> READ MORE </a>
+				<div class="post wrapper-three" id="expand-3">
+					<div class="post-inner">
+						<h3> Changing Roles </h3>
+						<p> About a decade ago, people came to UX designers to solve creative challenges... </p>
+						<a class="link" href="post_3.html"> READ MORE </a>
+					</div>
 				</div>
 
-				<div class="wrapper wrapper-four" id="expand-4">
-					<h3> Organizational Design </h3>
-					<p> Lorem ipsum dolor sit amet, te diam elit interesset has, te nam luptatum urbanitas maiestatis. </p>
-					<a class="link" href="post_4.html"> READ MORE </a>
+				<div class="post wrapper-four" id="expand-4">
+					<div class="post-inner">
+						<h3> Organizational Design </h3>
+						<p> “You see, when you have a pack of designers roaming your halls, it’s hard for... </p>
+						<a class="link" href="post_4.html"> READ MORE </a>
+					</div>
 				</div>
 
-				<div class="wrapper wrapper-five" id="expand-5">
-					<h3> Post #5 </h3>
-					<p> Lorem ipsum dolor sit amet, te diam elit interesset has, te nam luptatum urbanitas maiestatis. </p>
-					<a class="link" href="post_5.html"> READ MORE </a>
+				<div class="post wrapper-five" id="expand-5">
+					<div class="post-inner">
+						<h3> User Problems </h3>
+						<p> UX professionals have pretty much mastered identifying, understanding, and evaluating... </p>
+						<a class="link" href="post_5.html"> READ MORE </a>
+					</div>
 				</div>
 
-				<div class="wrapper wrapper-six" id="expand-6">
-					<h3> Post #6 </h3>
-					<p> Lorem ipsum dolor sit amet, te diam elit interesset has, te nam luptatum urbanitas maiestatis. </p>
-					<a class="link" href="post_6.html"> READ MORE </a>
+				<div class="post wrapper-six" id="expand-6">
+					<div class="post-inner">
+						<h3> IBM Embraces Design </h3>
+						<p> As new trends begin to emerge, technology companies are forced to reimagine their values. IBM is... </p>
+						<a class="link" href="post_6.html"> READ MORE </a>
+					</div>
 				</div>
 
-				<div class="wrapper wrapper-seven" id="expand-7">
-					<h3> Post #7 </h3>
-					<p> Lorem ipsum dolor sit amet, te diam elit interesset has, te nam luptatum urbanitas maiestatis. </p>
-					<a class="link" href="post_7.html"> READ MORE </a>
+				<div class="post wrapper-seven" id="expand-7">
+					<div class="post-inner">
+						<h3> UX is Broken </h3>
+						<p> "We endlessly discuss design details, sounding job titles, whether we should... </p>
+						<a class="link" href="post_7.html"> READ MORE </a>
+					</div>
 				</div>
 
-				<div class="wrapper wrapper-eight" id="expand-8">
-					<h3> Post #8 </h3>
-					<p> Lorem ipsum dolor sit amet, te diam elit interesset has, te nam luptatum urbanitas maiestatis. </p>
-					<a class="link" href="post_8.html"> READ MORE </a>
+				<div class="post wrapper-eight" id="expand-8">
+					<div class="post-inner">
+						<h3> Information Architecture </h3>
+						<p> As the web has developed drastically since the 90’s, information architecture has evolved... </p>
+						<a class="link" href="post_8.html"> READ MORE </a>
+					</div>
 				</div>
 
 			</div>
